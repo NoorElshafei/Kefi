@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kefi</string>
+    <string name="forget_password"><u>نسيت كلمة المرور؟</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="u_prefer_not_to_choose_u"><b><u>تفضل عدم الاختيار؟</u></b></string>
+    <string name="i_don_t_know"><u>لا اعرف</u></string>
+
+    <string-array name="custom_months">
+        <item>يناير</item>
+        <item>فبراير</item>
+        <item>مارس</item>
+        <item>ابريل</item>
+        <item>مايو</item>
+        <item>يونيو</item>
+        <item>يوليو</item>
+        <item>أغسطس</item>
+        <item>سبتمبر</item>
+        <item>اكتوبر</item>
+        <item>نوفمبر</item>
+        <item>ديسمبر</item>
+    </string-array>
+
+    <string-array name="custom_weekdays_arabic">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
+
+    <string name="January">يناير</string>
+    <string name="February">فبراير</string>
+    <string name="march">مارس</string>
+    <string name="April">ابريل</string>
+    <string name="May">مايو</string>
+    <string name="June">يونيو</string>
+    <string name="July">يوليو</string>
+    <string name="August">أغسطس</string>
+    <string name="September">سبتمبر</string>
+    <string name="October">اكتوبر</string>
+    <string name="November">نوفمبر</string>
+    <string name="December">ديسمبر</string>
+
+
+    <string name="accept_our_terms_and_conditions"><u>قبول الشروط والأحكام الخاصة بنا</u></string>
+    <string name="click_here_to_read"><u> انقر هنا للقراءة </u></string>
+    <string name="see_all"><u>See all</u></string>
+
+
+    <string name="send_me_a_new_code"><u>ارسل رمز جديد </u></string>
+
+    <string name="view_more"><u>شاهد المزيد</u></string>
+
+    <string name="detailsDark">تحدث الهالات السوداء تحت العينين عندما يظهر الجلد بشكل اغمق تحت العينين ، وهي تختلف عن الكدمات أو احمرار العيون </string>
+    <string name="tipsDarkCircle">- القيام بعمل كمادات بارده.  \n- الحصول على قسط كافي من النوم.   \n- وضع اكياس الشاي الباردة </string>
+    <string name="detailsFineLines">يعد وجود خطوط تحت عينيك جزءًا طبيعيًا من التقدم في السن لأن المنطقة الموجودة تحت مقلة العين عبارة عن جلد رقيق به أوعية دموية.</string>
+    <string name="tipsFineLine">- ترطيب وتقشير.  \n- وضع واقي بمعامل حماية 30 يوميا.   \n- تدليك منطقة العين  \n- اتباع نظام غذائي صحي .</string>
+    <string name="detailsPuffyEyes">مع تقدم العمر ، تضعف بعض العضلات التي تدعم الجفون. قد يتراكم السائل أيضًا في المساحة الموجودة أسفل عينيك مما يزيد من التورم.</string>
+    <string name="tipsPuffyEyes">- كمادات باردة.  \n- شرب الماية الكافي.   \n- تجنب الوجبات المالحة .   \n- الابتعاد عن التدخين . \n- اخذ قسطا كافي من النوم. </string>
+    <string name="detailsChappedLips">يحدث جفاف الشفتين وتشققها والاحساس بالآلم نتيجة للتعرض لأشعة الشمس والتى تسبب تشقق الشفتين، كما يمكن لعض الشفاه المتكرر أن يكون عاملاً مساهماً ايضاً.</string>
+    <string name="tipsChappedLips">- الترطيب المتكرر وتجنب التعرض للشمس.  \n- شرب الماية الكافي.   \n- تناول نظام غذائي صحي متوازن .   \n-  تجنب عض الشفاه المتكرر . </string>
+    <string name="detailsCrackedCornerLips">هو التهاب في أحد جانبي الفم أو كليهما. غالبًا ما تكون الزوايا حمراء مع تقشر الجلد والتهابه.</string>
+    <string name="tipsCrackedCornerLips">- التقشير.  \n- اعمل بخار للشفاه لمدة من 3 إلى 5 دقائق لإزالة القشر أو الجلد الميت بسهولة.   \n- ضعي بلسم الشفاه أو الفازلين أو زيت الزيتون أو زيت جوز الهند. </string>
+    <string name="detailsSuddenSwollenLips"> يحدث تورم الشفتين نتيجة لزيادة السوائل تحت جلد الشفاه أو الالتهاب. ومن الأسباب الشائعة لتورم الشفتين هى الإصابات والجروح والحساسية بسبب بعض الأطعمة والأدوية وعض الحشرات.</string>
+    <string name="tipsSuddenSwollenLips">- عمل  تدليك لشفتيك بمكعبات الثلج.  \n- لا تفركي شفتيك لأنها قد تسبب جروح أو تشققات.   \n- تجنب مستحضرات التجميل.</string>
+    <string name="detailsSunburnedLips">في هذه الحالة تنتفخ الشفتين ، حيث تشعرين بألم عند اللمس، وبثور حول الشفاه ، وتشعر بصعوبات أثناء الكلام أو تناول الطعام ، وتبدو الشفاه حمراء داكنة أو سوداء اللون.</string>
+    <string name="tipsSunburnedLips">- تجنب التعرض المفرط للشمس.  \n- لا تستخدمي الفازلين.   \n- لا تستخدمي الزيوت في هذه الحالة.    \n- عمل الكمادات الباردة.</string>
+    <string name="detailsNormalSkin">جلد البشرة العادية هو جلد لا جافًا جدًا ولا دهنيًا جدًا. له ملمس عادى ليس به عيوب ودائما مظهره نظيف وناعم ، ولا يحتاج إلى عناية خاصة</string>
+    <string name="tipsNormalSkin">- تناول نظام غذائي صحي.  \n- استخدم واقي من الشمس بمعامل حماية 15+ على الأقل.   \n- علاج البشرة بلطف.</string>
+    <string name="detailsOilySkin">البشرة الدهنية هى عبارة عن المظهر المسامي الورطب واللامع الذي ينتج عن الإفراط في إنتاج الدهون ، وعادة ما يتم تحديده من خلال أسباب وراثية  أو هرمونية. وعادة ما يكون مرتبطًا بحدوث حب الشباب.</string>
+    <string name="tipsOilySkin">- السيطرة على التوتر والضغط.  \n- تناول نظام غذائي صحي.   \n- وضع أدوية حب الشباب أولا قبل المرطب أو المكياج .  </string>
+    <string name="detailsMixedSkin">البشرة المختلطة هي عبارة منطقة دهنية والمعروفة بمنطقة T (الجبهة والأنف والذقن) بينما يكون الجلد الموجود على الخدين طبيعيًا أو جافًا.</string>
+    <string name="tipsMixedSkin">-  استخدم واقي من الشمس بعامل حماية من الشمس 15+ على الأقل.
+  \n - تناول نظام غذائي صحي.   \n -غسل الوجه مرتين في اليوم .</string>
+    <string name="detailsDrySkin">من اعراض جفاف البشرة الخشونة والتشقق، وقد يظهر الجلد باللون رماديا ويسبب الحكة مما يسهل دخول العدوى إليه</string>
+    <string name="tipsDrySkin">- شرب كمية كافية من الماء.  \n- علاج البشرة بلطف.   \n- استخدام منظف مرطب لا يحتوي على الكحول.</string>
+    <string name="detailsDandruff">إنها حالة جلدية تؤثر على فروة الرأس. تشمل اعراض ظهور القشرة وأحيانًا حكة خفيفة ، ومن أسباب قشرة الرأس جفاف الجلد  والاثار الجانبية لمنتجات الشعر والتغيرات الهرمونية.</string>
+    <string name="tipsDandruff">- التقليل من مستويات التوتر.  \n- استخدام الصبار.   \n- استخدام زيت جوز الهند.</string>
+    <string name="detailsHairDamage">يحدث تلف الشعر عندما يتم تغيير جزء أو أكثر من بنية الشعر ، مما يؤدي إلى ضعف الشعر  فيبدو وكأنه شعر غير صحي.يحدث تلف الشعر من خلال الغسيل والتجفيف ، أو استخدام المواد الكيمائية والصبغة.</string>
+    <string name="tipsHairDamage">- تجنب الإفراط في الغسل.  \n - تجنب الإفراط في التصفيف بالفرشاة.   \n -تجنب تسريحات الشعر الضيقة</string>
+    <string name="detailsHairLoss">من الطبيعي أن تتساقط كمية معينة من الشعر كل يوم ، وعادة ما يفقد الناس ما يصل إلى 100 شعرة كل يوم.ذلك بسبب الإجهاد وعدم التوازن الهرموني والثعلبة</string>
+    <string name="tipsHairLoss">- تدليك فروة الرأس.  \n- تجنب الاستحمام بالماء الساخن.   \n- غيري منتجات شعرك . </string>
+    <string name="detailsSkinCare">العناية بالبشرة هي مجموعة من الممارسات التي تدعم سلامة البشرة وتعزز مظهرها وتخفف من مشاكل الجلد.</string>
+
+
+    <string name="tipsSkinCare">- ابقي بشرة طفلك بعيدة عن أشعة الشمس.  \n- الاعتناء ببشرة طفلك الجافة.   \n- اتبعي مع طفلك أفضل الممارسات للاستحمام.   </string>
+    <string name="detailsHairCare"> العناية بالشعر: مصطلح عام للنظافة والتجميل يشمل الشعر الذي ينمو من فروة الرأس ، وبدرجة أقل في الوجه وشعر الجسم.</string>
+    <string name="tipsHairCare">- الاعتناء بالنظام الغذائي للأطفال.  \n- اختيار الشامبو الذي ينظف الشعر.    \n- حماية شعرهم من الظروف المناخية القاسية.</string>
+    <string name="detailsDiaperArea">منطقة الحفاض: منطقة حساسة للأطفال وتسبب حالة شائعة وهى ما تسمى طفح الحفاضات.</string>
+    <string name="tipsDiaperArea">- تغيير الحفاضات بشكل متكرر.  \n- لا تفرطي في شد الحفاضات.      \n- استخدام المرهم بانتظام.  </string>
+    <string name="detailsFootHand">- الرطوبة والبقع الداكنة   \n- جفاف الجلد.      \n- طفح جلدي . </string>
+    <string name="tipsFootHand">- اختر المرطب المناسب.   \n- ارتداء مقاس الحذاء المناسب.       \n- يجب أن لا تمشي حافية القدميين . </string>
+    <string name="detailsKneeElbow">- البقع الداكنة.    \n- جفاف الجلد.        \n- النتوءات الصغيرة. </string>
+    <string name="tipsKneeElbow">- الحفاظ على وزن صحي.    \n- الاستمرار  في الحركة.        \n- الوضعية السليمة للركبة والقدمين</string>
+    <string name="detailsNails"> - الضعف.     \n-التكسير.        \n- الإصابات والالتهابات. </string>
+    <string name="tipsNails">- الحفاظ على الأظافر نظيفة وجافة.      \n- قص الأظافر بشكل مستقيم.        \n- لا تقضم الأظافر أو تقوم بإزالتها   </string>
+    <string name="detailsBikiniArea">- تصبغ بين الفخذين      \n- فرط تصبغ خط البكيني  </string>
+    <string name="tipsBikiniArea">- الترطيب\n- ارتداء الملابس القطنية.\n- الحفاظ على تهدئة بشرتك بعد إزالة الشعر.</string>
+    <string name="detailsUnderarmArea">- جفاف الجلد  \n- فرط تصبغ.  </string>
+    <string name="tipsUnderarmArea">
+- الترطيب\n- ارتداء الملابس القطنية.\n- الحفاظ على تهدئة بشرتك بعد إزالة الشعر.
+</string>
+
+
+    <string name="description_hair_loss">من الطبيعي أن تتساقط كمية معينة من الشعر كل يوم،\n وعادة ما يفقد الناس ما يصل إلى 100 شعرة\n كل يوم</string>
+
+
+    <!--    amany-->
+
+
+    <string name="about">من نحن</string>
+    <string name="about_us">معلومات عنا</string>
+    <string name="description_about_us">لأننا نؤمن بأن الجمال هو\n مرآة الصحة، نقدم لكم خبراتنا\n في عالم التجميل والصحة العامة سعيا\n منا لأرضاء جميع عملائنا.</string>
+    <string name="foot_amp_hand">القدم واليدين</string>
+    <string name="knee_amp_elbow">الركبة والكوع</string>
+    <string name="nails">الأظافر</string>
+    <string name="sensitive_area">المناطق الحساسة</string>
+    <string name="videos_body">فيديوهات</string>
+    <string name="body_products">منتجات الجسم </string>
+    <string name="problems_foot_hand_body">مشاكل</string>
+    <string name="tips_foot_hand_body">نصائح</string>
+    <string name="natural_recipes_foot_hand_body">وصفات\n طبيعية</string>
+    <string name="problems_knee_body">مشاكل</string>
+    <string name="tips_knee_body">نصائح</string>
+    <string name="natural_recipes_knee_body">وصفات\n طبيعية</string>
+    <string name="problems_nails_body">مشاكل</string>
+    <string name="tips_nails_body">نصائح</string>
+    <string name="natural_recipes_nails_body">وصفات\n طبيعية</string>
+    <string name="bikini_body">بيكيني</string>
+    <string name="under_arm_body">تحت الذراع</string>
+    <string name="problems_bikini_body">مشاكل</string>
+    <string name="tips_bikini_body">نصائح</string>
+    <string name="natural_nrecipes_bikini_body">وصفات\n طبيعية</string>
+    <string name="problems_arm_body">مشاكل</string>
+    <string name="tips_arm_body">نصائح</string>
+    <string name="natural_nrecipes_arm_body">وصفات\n طبيعية</string>
+    <string name="checkout_page">الدفع</string>
+    <string name="shipping_address_chaeckout_page">عنوان الشحن</string>
+    <string name="please_add_your_address_checkout_page">الرجاء إضافة عنوانك</string>
+    <string name="payment_method_checkout_page">طريقة الدفع</string>
+    <string name="cash_on_delivery_checkout_page">الدفع عند الاستلام </string>
+    <string name="items_checkout_page">العناصر</string>
+    <string name="add_promo_code_checkout_page">أضف كود الخصم</string>
+    <string name="total_checkout_page">الإجمالي</string>
+    <string name="place_order_checkout_page">تقديم الطلب</string>
+    <string name="free_shipping_checkout_page">الشحن مجانا</string>
+    <string name="mobile_verification_1">التحقق من الهاتف</string>
+    <string name="phone_number_1">رقم الهاتف </string>
+    <string name="send_me_1">إرسل لي</string>
+    <string name="verification_code_2">رمز التحقق</string>
+    <string name="verify_your_number_2">تحقق من رقمك</string>
+    <string name="text_2">سوف نرسل لك رسالة نصيف01013526584</string>
+    <string name="continue_2">استمرار</string>
+    <string name="customer_support_page">خدمة العملاء</string>
+    <string name="text_customer_support">إرسل لنا</string>
+    <string name="call_customer_support">الإتصال بنا</string>
+    <string name="customer_support_message">خدمة العملاء</string>
+    <string name="text_message_customer">اكتب استفساراتك هنا</string>
+    <string name="send_customer_support_message">ارسل</string>
+    <string name="old_password">كلمة سر القديمة</string>
+    <string name="new_password">كلمة السر الجديدة</string>
+    <string name="repeat_new_password">كرر كلمة المرور الجديدة</string>
+    <string name="change_phone">تغيير الهاتف</string>
+    <string name="save_changes">احفظ التغييرات</string>
+    <string name="house_and_apartment_number">رقم المنزل والشقة</string>
+    <string name="street_name">اسم الشارع</string>
+    <string name="district_or_area_name">اسم الحي اوالمنطقة</string>
+    <string name="city_name">اسم المدينة</string>
+    <string name="eyes">العيون</string>
+    <string name="dark_circles">الهالات السوداء</string>
+    <string name="fine_lines">الخطوط الرقيقة</string>
+    <string name="puffy_eyes">انتفاخات العيون</string>
+    <string name="description">الوصف</string>
+    <string name="tips">نصائح</string>
+    <string name="natural_recipes">وصفات\n طبيعية</string>
+    <string name="lips">الشفاه</string>
+    <string name="types_of_skin">أنواع البشرة</string>
+    <string name="face_products">منتجات الوجه</string>
+    <string name="no_users_found">لا يوجد مستخدمين</string>
+    <string name="send_email">ارسل بريد الكتروني</string>
+    <string name="hair_problem">مشاكل الشعر</string>
+    <string name="dandruff">القشرة</string>
+    <string name="hair_damage">تلف الشعر</string>
+    <string name="hair_loss">تساقط الشعر</string>
+    <string name="reasons">الأسباب</string>
+    <string name="hair_products">منتجات الشعر</string>
+    <string name="upload_your_video">قم بتحميل الفيديو الخاص بك</string>
+    <string name="browse_and_choose_the_files_nyou_want_to_upload">تصفح واختر الملفات التي تريد تحميلها</string>
+    <string name="max_file_size_200_mb">الحد الأقصى لحجم الملف: 200 ميجا بايت</string>
+    <string name="kids">الأطفال</string>
+    <string name="skin_care">العناية بالبشرة</string>
+    <string name="hair_care">العناية بالشعر</string>
+    <string name="diaper_area"> منطقة الحفاضات</string>
+    <string name="kids_products">منتجات الأطفال</string>
+    <string name="chapped">تشققات الشفاه</string>
+    <string name="cracked_corner">تشققات اطراف الشفاه</string>
+    <string name="sudden_swollen">تورم الشفاه المفاجئ</string>
+    <string name="sunburned">الشفاه المحترقة</string>
+    <string name="checkout">الدفع</string>
+    <string name="no_cart_found">لا يوجد عناصر فى السلة</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="no_notifications_found">لا يوجد الإشعارات </string>
+    <string name="password">كلمة السر </string>
+    <string name="remember_me">تذكرني</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="no_order_found">لا يوجد طلبات</string>
+    <string name="payment_method"> طريقة الدفع</string>
+    <string name="credit_cards">بطاقات الإئتمان</string>
+    <string name="add_card_visa_or_master_card">إضافة بطاقة (فيزا أو ماستر كارد)</string>
+    <string name="visa">فيزا</string>
+    <string name="select_payment_method">اختار طريقة الدفع</string>
+
+    <string name="total_to_pay"> إجمالى الدفع </string>
+    <string name="add_more_card">أضف بطاقة اخرى </string>
+    <string name="master_card_gold">Master card - gold</string>
+    <string name="visa_classic">Visa - Classic</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="our_policy">السياسة الخاصة بنا </string>
+    <string name="this_is_the_privacy_policy_of_our_company">هذه هي سياسة الخصوصية لشركتنا يشرح هذا المستند سياساتنا \n المتعلقة بجمع المعلومات الشخصية \n واستخدامها والكشف عنه.</string>
+    <string name="write_a_clarification_that_expresses_your_satisfaction">عبر عن مدى رضاءك بخدمتنا</string>
+    <string name="done">تم</string>
+
+
+    <string name="first_and_last_name">الإسم الأول</string>
+    <string name="birth_date">تاريخ الميلاد</string>
+    <string name="register"> تسجيل</string>
+    <string name="already_have_an_account">هل لديك حساب ؟ </string>
+
+
+    <string name="language">اللغة</string>
+    <string name="push_notifications">تشغيل الإشعارات </string>
+    <string name="invite_friends">ادعو الأصدقاء</string>
+    <string name="delete_my_account">احذف حسابي</string>
+    <string name="english">English</string>
+    <string name="cart_settings">إعدادات سلة التسوق</string>
+    <string name="add_address">اضف عنوان</string>
+    <string name="order_placed">تم الطلب</string>
+    <string name="your_order_was_placed_successfully_nfor_more_details_check_all_my_orders_nin_cart_settings">تم وضع طلبك بنجاح\nلمزيد من التفاصيل ، تحقق من جميع طلباتك من اعدادت سلة التسويق</string>
+    <string name="tracking_order">تتبع الطلب</string>
+    <string name="delivered">تم التوصيل</string>
+    <string name="on_the_way">في الطريق إليك</string>
+    <string name="received">تم الاستلام الطلب</string>
+    <string name="normal">عادية</string>
+    <string name="mixed">مختلطة</string>
+    <string name="oily"> دهنية </string>
+    <string name="dry">جافة</string>
+
+
+    <!--    end amany-->
+
+
+    <!--start noor-->
+    <string name="shipping_addresses">عناوين الشحن</string>
+    <string name="shipping_address">عنوان الشحن</string>
+    <string name="upload_media">تحميل الوسائط</string>
+    <string name="add_your_thumbnail">أضف الصورة المصغرة الخاصة بك</string>
+    <string name="title">العنوان</string>
+    <string name="tags">علامات</string>
+    <string name="save">حفظ</string>
+    <string name="my_uploads">رفع الفيديو</string>
+    <string name="uploading">يتم الرفع</string>
+    <string name="we_are_uploading_your_file_please_wait_a_moment">نحن نقوم برفع ملفك</string>
+    <string name="estimated_time"> الوقت المتوقع :</string>
+    <string name="seconds">ثانية</string>
+    <string name="mimute">دقيقة</string>
+    <string name="hours">ساعة</string>
+    <string name="file_size">حجم الملف :</string>
+    <string name="migabyte"> ميجا بايت</string>
+    <string name="estimated_time_20_min">الوقت المتوقع : 20 دقيقة</string>
+    <string name="file_size_200_mb">حجم الملف : 200 ميجا</string>
+    <string name="followers">المتابعون</string>
+    <string name="following">يتابع</string>
+    <string name="follow">تابع</string>
+    <string name="poke">نكز</string>
+    <string name="recently">حديثاً</string>
+    <string name="most_viewed">الأكثر مشاهدة</string>
+    <string name="set">تعيين</string>
+    <string name="from">من</string>
+    <string name="note">ملاحظة</string>
+    <string name="color">اللون</string>
+    <string name="alarm">تنبيه</string>
+    <string name="add_note">اضافة ملاحظة</string>
+    <string name="edit_name">تعديل الاسم</string>
+    <string name="add_name">اضافة اسم</string>
+    <string name="exit_app">الخروج من التطبيق</string>
+    <string name="do_you_want_to_exit_from_app">هل تريد الخروج من التطبيق؟</string>
+    <string name="exit">خروج</string>
+    <string name="back">رجوع</string>
+    <string name="logout_form_app">تسجيل الخروج من التطبيق</string>
+    <string name="do_you_want_to_logout_from_app">هل تريد تسيجل الخروج من التطبيق؟</string>
+    <string name="settings">الإعدادت</string>
+    <string name="rate_us">قيمنا</string>
+    <string name="about_app">عن التطبيق</string>
+    <string name="calendar">التقويم</string>
+    <string name="log_out">تسجيل الخروج</string>
+    <string name="loading">جاري التحميل …</string>
+    <string name="your_skin_is">نوع بشرتك </string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="find_reel">ابحث عن Reel</string>
+    <string name="search_for_anything">ابحثِ عن منتجات…</string>
+    <string name="recently_viewed">شوهدت حديثا</string>
+    <string name="clear">مسح</string>
+    <string name="recommended">مقترحات</string>
+    <string name="my_carts">السلة الخاصة بي</string>
+    <string name="my_orders">الطلبات الخاصة بي</string>
+    <string name="pending_payments">دفعات مؤجلة</string>
+    <string name="hi"> مرحبا </string>
+    <string name="hi_sheraa">مرحبا شيرا ،</string>
+    <string name="welcome_to_our_community">اهلا بك في متجرنا</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="welcome_to_n_blume_beauty_app">مرحبًا بك\n في تطبيق بلوم بيوتي</string>
+    <string name="the_best_app_for_caring_n_your_hair_and_skin">أفضل تطبيق للعناية\n بالشعر والبشرة</string>
+    <string name="get_started">ابدأ الاّن </string>
+    <string name="already_have_account">هل لديك حساب؟</string>
+    <string name="sign_in">سجل الدخول</string>
+    <string name="body">الجسم</string>
+    <string name="face">الوجه</string>
+    <string name="hair">الشعر</string>
+    <string name="videos">فيديوهات</string>
+    <string name="articles">مقالات</string>
+    <string name="slide_to_retake_the_quiz">قم بالتمرير لإعادة الأختبار</string>
+    <string name="rate_order">قيم الطلب</string>
+    <string name="re_order">إعادة الطلب</string>
+    <string name="order_id_414668357">رقم الطلب :</string>
+    <string name="edit">تعديل</string>
+    <string name="my_note">ملاحظاتي</string>
+    <string name="create_new_one">اضافة ملاحظة جديدة</string>
+    <string name="products">منتجات</string>
+    <string name="descriptions">وصف مقالات</string>
+    <string name="no_favourite_description">لا يوجد وصف مفضل</string>
+    <string name="no_favorite_product">لا يوجد منتجات مفضلة</string>
+    <string name="no_favorite_article">لا يوجد مقالات مفضلة</string>
+    <string name="no_favorite_tips">لا يوجد نصائح مفضلة</string>
+    <string name="no_natural_recipes_favourite">لا يوجد وصفات طبيعية مفضلة</string>
+    <string name="natural_recipes1">وصفات طبيعية</string>
+    <string name="no_favorite_video">لا يوجد فيديوهات مفضلة</string>
+    <string name="profile_photo">صورة الملف الشخصي</string>
+    <string name="select_photo">اختر صورة</string>
+    <string name="delete_photo">احذف الصورة</string>
+    <string name="comments">التعليقات</string>
+    <string name="related">الفيديوهات ذات صلة</string>
+    <string name="share">مشاركة</string>
+    <string name="show_more">&#160;&#160;&#160;&#160; عرض المزيد</string>
+    <string name="show"> عرض اقل&#160;</string>
+    <string name="no_related_video">لا يوجد فيديوهات ذات صلة</string>
+    <string name="views"> &#160;مشاهدة </string>
+    <string name="no_comments">لا يوجد تعليقات</string>
+    <string name="no_videos_found">لا يوجد فيديو</string>
+    <string name="welcome_to_our_app">اهلا بك في تطبيقنا</string>
+    <string name="main_category">الأقسام الرئيسية</string>
+    <string name="explore_more">اكتشف المزيد</string>
+    <string name="watch_it"> شاهد الفيديو</string>
+    <string name="l_e"> &#160; ج.م </string>
+    <string name="_83_96_le"> 83.96 جنية</string>
+    <string name="_0_le">0 جنية</string>
+    <string name="add_headline">اضف headline</string>
+    <string name="add_video">أضف فيديو</string>
+    <string name="comma"> ،</string>
+    <string name="no_address_found">لا يوجد عنوان</string>
+    <string name="track_order">تتبع الطلب</string>
+    <string name="unfollow">إلغاء المتابعة</string>
+    <string name="no_headline">لا يوجد HeadLine</string>
+    <string name="show_less">  &#160;&#160;&#160;&#160;عرض أقل </string>
+
+
+    <!--start amany   toast message-->
+
+
+    <string name="delete">حذف</string>
+    <string name="please_write_your_comment">من فضلك اكتب تعليقك</string>
+    <string name="please_choose_your_rate">من فضلك اختيار تقيمك</string>
+    <string name="please_check_your_internet"> من فضلك ، تحقق من الإنترنت الخاص بك </string>
+    <string name="your_review_edited_successfully">تم تعديل تقيم بنجاح</string>
+    <string name="your_review_added_successfully">تم إضافة تقيم بنجاح</string>
+    <string name="your_comment_edited_successfully">تم تعديل تعليقك بنجاح</string>
+    <string name="your_comment_added_successfully">تم اضافة تعليقك بنجاح</string>
+    <string name="note_updated_successfully">تم تحديث الملاحظة بنجاح</string>
+    <string name="note_saved_successfully">تم حفظ الملاحظة بنجاح</string>
+    <string name="please_fill_all_information">من فضلك ، املأ جميع المعلومات</string>
+    <string name="please_select_day">الرجاء تحديد اليوم</string>
+    <string name="headLine_updated_successfully">تم تحديث HeadLine بنجاح</string>
+    <string name="tips_to_overcome_it">نصائح للتغلب عليها: </string>
+    <string name="natural_recipes2">الوصفات الطبيعية</string>
+    <string name="natural_recipes_puffy_eyes">- خيار بارد.  \n- شرائح البطاطس.   \n- حليب. </string>
+    <string name="natural_recipes_fine_lines">- استخدم أكياس الشاي الأخضر.  \n- زيت جوز الهند.   \n- الصبار.</string>
+    <string name="natural_recipes_dark_circles">- وضع اكياس الشاي الباردة.  \n- اللبن المثلج.   \n- ماء الورد. \n- الخيار</string>
+    <string name="sudden_swollen_lips">تورم الشفتين المفاجئ </string>
+    <string name="cracked_corner_lips">تشقق اطراف الشفاه</string>
+    <string name="chapped_lips">تشقق الشفاه</string>
+    <string name="sunburned_lips">الشفاه المحترقة</string>
+    <string name="natural_recipes_sudden_swollen_lips">- الكمادات الباردة.  \n- الصبار.   \n- غسل الشفاه بالماء المالح.</string>
+    <string name="natural_recipes_cracked_corner_lips">- العسل.  \n- الماء.   \n- جل الصبار.</string>
+    <string name="natural_recipes_chapped_lips">-زيت جوز الهند.  \n- الصبار.   \n- العسل.</string>
+    <string name="natural_recipes_sunburned_lips">- زبدة الشيا.  \n- زيت الفانيليا العطري.   \n- زيت عطري للشاي الأخضر.</string>
+    <string name="dry_skin">البشرة الجافة</string>
+    <string name="oily_skin">البشرة الدهنية</string>
+    <string name="mixed_skin">البشرة المختلطة</string>
+    <string name="normal_skin">البشرة العادية</string>
+    <string name="natural_recipes_oily_skin">- زيت الزيتون.  \n- العسل.   \n- دقيق الشوفان. \n- زيت الجوجوبا.</string>
+    <string name="natural_recipes_mixed_skin">- قرفة.  \n- ملح البحر.   \n- عصير ليمون. </string>
+    <string name="natural_recipes_dry_skin">- زيت جوز الهند.  \n- الصبار.   \n- زيت زيتون.</string>
+    <string name="natural_recipes_normal_skin">- زيت جوز الهند.  \n- شاي أخضر.   \n- زيت شجرة الشاي.</string>
+    <string name="foot_hand">القدم واليدين</string>
+    <string name="problem">المشاكل</string>
+    <string name="knee_elbow">الركبة والكوع</string>
+    <string name="natural_recipes_knee_elbow">- عسل.  \n- ماء الورد.   \n- الكركم. </string>
+    <string name="natural_recipes_foot_hand">- زيت اللافندر.  \n- ماء الورد.   \n- زيت زيتون.</string>
+    <string name="natural_recipes_nails">- ملح البحر.  \n- زيت الزيتون.   \n- عصير ليمون.</string>
+    <string name="natural_recipes_bikini">- ترطيب البشرة.  \n- التنظيف العادي (النظافة). </string>
+    <string name="natural_recipes_under_arm">- زيت جوز الهند.  \n- زيت شجرة الشاي.   \n- قشر البرتقال.</string>
+    <string name="hair_loss_reasons">الإجهاد وعدم التوازن الهرموني والثعلبة</string>
+    <string name="hair_damage_description">يحدث تلف الشعر عندما يتم تغيير جزء أو أكثر من بنية الشعر ، مما يؤدي إلى ضعف الشعر  فيبدو وكأنه شعر غير صحي.</string>
+    <string name="hair_damage_resaons">يحدث تلف الشعر من خلال الغسيل والتجفيف ، أو استخدام المواد الكيمائية والصبغة.</string>
+    <string name="natural_recipes_hair_damage">- زيت الأفوكادو.  \n- زيت جوز الهند.   \n- زيت الجوجوبا.</string>
+    <string name="dandruff_description">إنها حالة جلدية تؤثر على فروة الرأس. تشمل اعراض ظهور القشرة وأحيانًا حكة خفيفة.</string>
+    <string name="dandruff_reasons">بعض أسباب قشرة الشعر هي جفاف الجلد وتفاعلات الفروة مع منتجات الشعر والتغيرات الهرمونية.</string>
+    <string name="natural_recipes_dandruff">- الصبار.  \n- أوميجا 3.   \n- خل التفاح.</string>
+    <string name="natural_recipes_hair_loss">- الصبار  \n- زيت جوز الهند.   \n- الزبادي اليوناني والعسل.</string>
+    <string name="natural_recipes_dipper_area">-زبدة الشيا.  \n -زبدة الكاكاو.   \n -أكسيد الزنك. </string>
+    <string name="natural_recipes_skin_care">- الماء الدافئ.  \n- لوشن زيت جوز الهند للاطفال.   \n- ترطيب بشرة طفلك بانتظام.</string>
+    <string name="natural_recipes_hair_care">- الصبار.  \n- زيت جوز الهند.   \n- زيت الجوجوبا.</string>
+
+    <string name="tips_for_dandruff">نصائح لتجنب القشرة:</string>
+    <string name="bikini_area"> منطقة بيكيني</string>
+    <string name="underarm_area"> منطقة تحت الذراع</string>
+    <string name="tips_for_dry_skin">نصائح للبشرة الجافة: </string>
+    <string name="tips_for_bikini">نصائح للبيكيني: </string>
+    <string name="tips_for_foot_hand">نصائح للقدم واليد:</string>
+    <string name="tips_for_hair_care">نصائح للعناية بالشعر:</string>
+    <string name="tips_to_avoid_damage">نصائح لتجنب التلف:</string>
+    <string name="tips_to_avoid_hair_loss">نصائح لتجنب تساقط الشعر:</string>
+    <string name="tips_for_knee_elbow">نصائح للركبة والكوع:</string>
+    <string name="tips_for_nails">نصائح للأظافر:</string>
+    <string name="tips_for_normal_skin">نصائح للبشرة العادية:</string>
+    <string name="tips_for_oily_skin">نصائح للبشرة الدهنية:</string>
+    <string name="tips_for_skin_care">نصائح للعناية بالبشرة:</string>
+    <string name="tips_for_mixed_skin"> نصائح للبشرة المختلطة: </string>
+    <string name="tips_for_underarm"> نصائح لمنطقة الإبط :</string>
+    <string name="tips_for_healthy_foot_hand"> نصائح صحية للقدم واليد:</string>
+    <string name="tips_for_healthy_knee_elbow">نصائح لصحة الركبة والكوع:</string>
+    <string name="tips_for_healthy_nails">نصائح لأظافر صحية:</string>
+    <string name="tips_for_bikini_area">نصائح لمنطقة البكيني:</string>
+    <string name="tips_for_underarm_area">نصائح لمنطقة الإبط:</string>
+    <string name="tips_to_avoid_dandruff">نصائح لتجنب القشره:</string>
+    <string name="tips_to_avoid_hair_damage">نصائح لتجنب تلف الشعر:</string>
+    <string name="tips_for_diaper_area">نصائح لمنطقة الحفاضات:</string>
+    <string name="march_28_2021">مارس 1.2021</string>
+    <string name="featured">مقالات مميزة</string>
+    <string name="read_more">اقرأ المزيد</string>
+    <string name="Please_write_less_than_35_character">من فضلك اكتب أقل من 35 حرفًا</string>
+    <string name="name_updated_successfully">تم تعديل الأسم بنجاح</string>
+    <string name="please_enter_just_first_last_name">الرجاء إدخال الاسم الأول والأخير فقط </string>
+    <string name="internet_may_be_unstable_or_not_connected">قد يكون الإنترنت غير مستقر أو غير متصل</string>
+    <string name="your_rate_added_successfully">تم إضافة تقيمك بنجاح</string>
+    <string name="image_deleted_successfully">تم حذف الصورة بنجاح</string>
+    <string name="you_should_allow_storage_permission_to_upload_profile_picture">يجب عليك السماح بالوصول الى الذاكره لتحميل صورة الملف الشخصي</string>
+    <string name="please_enter_your_email">رجاءا أدخل بريدك الإلكتروني </string>
+    <string name="please_enter_valid_phone_number">الرجاء إدخال رقم هاتف صحيح</string>
+    <string name="please_select_one_answer">الرجاء تحديد إجابة واحدة</string>
+    <string name="please_accept_our_terms_conditions">الرجاء قبول الشروط والأحكام الخاصة بنا</string>
+    <string name="please_add_first_last_name">الرجاء إضافة الاسم الأول والأخير</string>
+    <string name="please_enter_valid_code">الرجاء ادخال الكود الصحيح</string>
+    <string name="we_will_send_you_an_new_code_in_sms">سنرسل لك رمزًا جديدًا في رسالة نصية قصيرة</string>
+    <string name="phone_updated_successfully">تم تعديل الهاتف بنجاح</string>
+    <string name="please_add_address">الرجاء إضافة العنوان</string>
+    <string name="not_available_now">ليس متاح الأن</string>
+    <string name="thank_you_your_message_sent_successfully">شكرا لك ، تم إرسال رسالتك بنجاح</string>
+    <string name="the_two_password_not_match">كلمتا المرور غير متطابقتين</string>
+    <string name="image_updated_successfully">تم تعديل الصورة بنجاح</string>
+    <string name="error">خطأ</string>
+    <string name="natural">natural</string>
+    <string name="carts_is_empty_please_add_at_least_one_product_to_cart">سلة التسوق فارغة ، الرجاء إضافة منتج واحد على الأقل إلى سلة التسوق</string>
+    <string name="settings_changed_successfully">تم تغيير الإعدادات بنجاح</string>
+    <string name="cash_on_delivery_selected_successful">تم اختيار الدفع نقدًا عند التسليم بنجاح</string>
+    <string name="added_to_cart">أضيف إلى سلة التسوق</string>
+    <string name="product_added_to_cart_already">تم إضافة المنتج إلى سلة التسوق بالفعل</string>
+    <string name="product_is_out_of_stock">المنتج غير متوفر</string>
+    <string name="your_account_deleted_successfully">تم حذف حسابك بنجاح</string>
+    <string name="the_file_must_not_be_larger_than_200_MB">يجب ألا يزيد حجم الملف عن 200 ميجا بايت</string>
+    <string name="please_wait_until_recent_video_uploaded">يرجى الانتظار حتى يتم تحميل الفيديو الحالى</string>
+    <string name="add_your_description">أضف الوصف الخاص بك</string>
+    <string name="add_your_tags">أضف العلامات </string>
+    <string name="add_your_title">اضف عنوان الفيديو</string>
+    <string name="video_upload_successfully">تم رفع الفيديو بنجاح</string>
+    <string name="to_watch_this_video_please_join_to_our_community">لمشاهدة هذا الفيديو \n من فضلك،انضم إلى تطبيقنا</string>
+    <string name="all_article">كل المقالات</string>
+    <string name="you_can_not_delete_last_product_from_checkout">لا يمكنك حذف المنتج الأخير من الدفع  </string>
+    <string name="comment_deleted_successfully">تم حذف التعليق بنجاح</string>
+    <string name="delete_comment">حذف تعليق</string>
+    <string name="do_you_really_want_to_delete_Comment">هل تريد حقًا حذف التعليق؟</string>
+    <string name="do_you_really_want_to_delete_Review">هل تريد حقًا حذف تقيمك ؟</string>
+    <string name="review_deleted_successfully">تم حذف تقيمك بنجاح</string>
+    <string name="delete_video">حذف الفيديو</string>
+    <string name="video_deleted_successfully">تم حذف الفيديو بنجاح</string>
+    <string name="do_you_really_want_to_delete_video">هل تريد حقا حذف الفيديو؟</string>
+    <string name="to">إلى</string>
+    <string name="home">الرئيسية</string>
+    <string name="store">المتجر</string>
+    <string name="favorite">المفضلة</string>
+    <string name="profile_page">حسابك</string>
+    <string name="please_add_your_headline">من فضلك أضف Headline</string>
+    <string name="read_less">اقرأ أقل</string>
+    <string name="blumers">صناع المحتوي</string>
+
+    <string name="address_delete_successfully">تم حذف العنوان بنجاح</string>
+    <string name="address_added_successfully">تم اضافة العنوان بنجاح</string>
+    <string name="address_updated_successfully">تم تحديث العنوان بنجاح</string>
+    <string name="read_full">اقرأ المزيد</string>
+    <string name="no_item_found">لم يتم العثور على نتيجة </string>
+
+  <string name="exit1"> تسجيل خروج</string>
+    <string name="which_one_are_you">ما هو جنسك ؟</string>
+    <string name="female">انثى</string>
+    <string name="male">ذكر</string>
+    <string name="to_give_you_a_customize_experience_n_we_need_to_know_your_gender">لمنحك تجربة مخصصة \n نحتاج إلى معرفة جنسك</string>
+    <string name="what_is_your_skin_type">ما هو نوع بشرتك ؟</string>
+    <string name="what_is_your_age">ما هو عمرك ؟</string>
+    <string name="next">التالي</string>
+    <string name="under_20">تحت 20</string>
+    <string name="describe_your_skin">صف بشرتك ؟</string>
+    <string name="between_20_40">بين 20 - 40</string>
+    <string name="upper_40">فوق الـ40</string>
+    <string name="shiny">لامع</string>
+    <string name="hydrated">رطب</string>
+    <string name="has_visibly_small_pores">مسام صغيرة بشكل واضح</string>
+    <string name="two_different_type_of_facial_skin">نوعان مختلفان من بشرة الوجه</string>
+    <string name="greasy">دهنية</string>
+    <string name="rough_texture">ملمس جاف</string>
+    <string name="smooth_texture">ملمس ناعم</string>
+    <string name="fine_lines_and_wrinkles">الخطوط الدقيقة والتجاعيد</string>
+    <string name="all_over_the_face">في جميع أنحاء الوجه</string>
+    <string name="never">لا اشعر بمشكلة</string>
+    <string name="very_often">غالبا</string>
+    <string name="sometimes">بعض الأحيانا</string>
+    <string name="often">غالبا</string>
+    <string name="rarely">نادرا</string>
+    <string name="never2">لا اعانى</string>
+    <string name="at_the_checks_mouth">عند الخد والفم</string>
+    <string name="what_are_your_skin_concerns">ما هي مشاكل بشرتك ؟ </string>
+    <string name="where_do_you_feel_tightness">اين تقع المشاكل في وجهك ؟</string>
+    <string name="how_often_do_you_have_n_pimples_or_acne">كم مرة تعاني/ ن من\n البثور أو حب الشباب؟</string>
+    <string name="how_often_does_your_skin_n_react_to_new_products">كم مرة تتفاعل بشرتك\n مع المنتجات الجديدة؟</string>
+    <string name="your_skin_type_is">نوع بشرتك هو</string>
+    <string name="let_s_go">لنذهب</string>
+    <string name="step_1_8">خطوة 1/8</string>
+    <string name="step_2_8">خطوة 2/8</string>
+    <string name="step_3_8">خطوة 3/8</string>
+    <string name="step_4_8">خطوة 4/8</string>
+    <string name="step_5_8">خطوة 5/8</string>
+    <string name="step_6_8">خطوة 6/8</string>
+    <string name="step_7_8">خطوة 7/8</string>
+    <string name="step_8_8">خطوة 8/8</string>
+    <string name="add_comment_to_the_video">أضف تعليقًا على الفيديو</string>
+    <string name="add_your_comment">أضف تعليقك</string>
+    <string name="comment">تعليق</string>
+
+    <string name="arabic">العربية</string>
+    <string name="select_language">اختار اللغة</string>
+    <string name="change_the_language">تغير اللغة</string>
+    <string name="language_message">سيتم حذف المنتجات الموجودة في عربة التسوق وكل شيء في الصفحة المفضلة و التقويم</string>
+    <string name="yes">موافق</string>
+    <string name="no">غير موافق</string>
+    <string name="no_comments_found">لا توجد تعليقات</string>
+
+
+
+
+
+    <string name="details">التفاصيل</string>
+    <string name="reviews">التقييمات</string>
+    <string name="brand">الماركة</string>
+    <string name="serial">رقم العلامة التجارية</string>
+    <string name="condition">شكل المنتج</string>
+    <string name="material">المكونات</string>
+    <string name="category">الفئة</string>
+    <string name="evaluate">تـقيـيــم</string>
+    <string name="add_to_cart">اضف الى السلة</string>
+    <string name="rate_this_product">تقييم المنتج</string>
+    <string name="add_comment_to_the_product">أضف تعليق للمنتج</string>
+    <string name="add_comment_to_order">اضف تعليق لتقييم الطلب</string>
+    <string name="no_reviews_found">لا يوجد تقييمات</string>
+    <string name="viola">فيولا</string>
+    <string name="vola">فولا كولاجين</string>
+    <string name="ebafix">إيبافيكس</string>
+    <string name="aloekita">الوكيتا</string>
+    <string name="follow_creators_you_may_like">تابع صناع المحتوى الذي يعجبك</string>
+    <string name="search_for_blumers">ابحث عن صناع المحتوى</string>
+    <string name="example_gmail_com">البريد الإلكتروني</string>
+    <string name="follow_blummers_to_see_their_reels">تابع صناع المحتوى لرؤية منشوراتهم</string>
+    <string name="we_will_text_you">سوف نرسل لك رسالة نصية على +2</string>
+    <string name="send_new_code">ارسال رمز جديد بعد  00:</string>
+    <string name="blummers">صناع المحتوى</string>
+    <string name="update">تحديث</string>
+    <string name="cancel">إلغاء</string>
+    <string name="update_app">تحديث التطبيق</string>
+    <string name="you_should_update_app"> يجب تحديث التطبيق قبل المتابعة</string>
+    <string name="please_write_your_rate">من فضلك اكتب تقييمك</string>
+    <string name="Please_add_your_address">الرجاء إضافة عنوانك</string>
+    <string name="no_videos_exist_now">لا توجد مقاطع فيديو الآن</string>
+    <string name="follow_blummers_to_see_theirs_reels">تابع صناع المحتوى لرؤية منشوراتهمم </string>
+    <string name="_zero_le">0 &#160; ج.م</string>
+
+
+
+
+    <string name="last_name">الإسم الأخير</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="added_to_favourites">تم اضافته الى المفضلة </string>
+    <string name="removed_from_favourites">تمت إزالته من المفضلة</string>
+    <string name="email_sent_successfully">تم إرسال البريد الإلكتروني بنجاح</string>
+    <string name="password_updated_successfully">تم تحديث كلمة المرور بنجاح</string>
+
+    <string name="September_5_2021">  سبتمبر 5.2021</string>
+    <string name="September_8_2021">سبتمبر 8.2021</string>
+    <string name="september_12_2021">سبتمبر 12.2021</string>
+    <string name="september_17_2021">سبتمبر 17.2021</string>
+    <string name="September_20_2021">سبتمبر 20.2021</string>
+    <string name="September_25_2021">سبتمبر 25.2021</string>
+    <string name="September_30_2021">سبتمبر 30.2021</string>
+    <string name="October_2_2021">أكتوبر 2.2021</string>
+    <string name="October_6_2021">أكتوبر 6.2021</string>
+    <string name="October_10_2021">أكتوبر 10.2021</string>
+    <string name="October_13_2021">أكتوبر 13.2021</string>
+    <string name="October_16_2021">أكتوبر 16.2021</string>
+    <string name="October_20_2021">أكتوبر 20.2021</string>
+    <string name="October_25_2021">أكتوبر 25.2021</string>
+    <string name="October_3_2021">أكتوبر 30.2021</string>
+    <string name="August_5_2021">أغسطس 5.2021</string>
+    <string name="August_8_2021">أغسطس 8.2021</string>
+    <string name="August_9_2021">أغسطس 9.2021</string>
+    <string name="August_13_2021">أغسطس 13.2021</string>
+    <string name="August_19_2021">أغسطس 19.2021</string>
+    <string name="August_24_2021">أغسطس 24.2021</string>
+    <string name="August_29_2021">أغسطس 29.2021</string>
+
+    <string name="please_write_a_headline">الرجاء كتابة headline</string>
+    <string name="delete_account">حذف الحساب </string>
+    <string name="do_you_really_want_todelete_account">هل حقا تريد حذف حسابك ؟</string>
+
+
+    <!-- end amany-->
+
+
+    <!--end noor-->
+
+</resources>

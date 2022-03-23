@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            tools:context=".ui.activities.trending_food.TrendingFoodActivity">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="39dp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_icon_navigation_chevron_left_24px"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="39dp"
+                android:layout_toEndOf="@+id/back"
+                android:text="Trending Food"
+                android:textColor="#EB839D"
+                android:textSize="@dimen/_19sdp"
+                app:layout_constraintStart_toEndOf="@+id/back"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="14dp"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="5dp"
+                android:paddingEnd="@dimen/_13sdp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/ic_options"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:id="@+id/notification_layout"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="11dp"
+                android:layout_toStartOf="@+id/option"
+                app:layout_constraintEnd_toStartOf="@+id/option"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_notifications" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginEnd="-7dp"
+                    android:visibility="invisible"
+                    android:layout_toStartOf="@+id/cart"
+                    android:backgroundTint="@color/bink"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/notif_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/arial_bold"
+                        android:text="10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8ssp" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/trending_food_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="true"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:paddingEnd="16dp"
+                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:spanCount="3"
+                tools:listitem="@layout/item_food_small" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

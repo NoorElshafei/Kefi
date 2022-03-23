@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "3704916275",
+    "project_id": "kefi-2f4c3",
+    "storage_bucket": "kefi-2f4c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3704916275:android:636a523d35761a52621646",
+        "android_client_info": {
+          "package_name": "com.gifting.kefi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3704916275-32mi0ofjlu3bneo1cdsusbilfm6nbk2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl2xBe_FznCtyDwf-u5b2yHeUp5JtN_V0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3704916275-32mi0ofjlu3bneo1cdsusbilfm6nbk2k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

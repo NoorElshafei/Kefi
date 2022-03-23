@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+
+
+            <ImageView
+                android:id="@+id/imageView55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_flower2" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="32dp"
+                    android:layout_toStartOf="@+id/option"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/back_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_icon_navigation_chevron_left_24px" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/hair_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:layout_marginTop="39dp"
+                    android:layout_toEndOf="@+id/back"
+                    android:text="@string/hair"
+                    android:textColor="#EB839D"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@+id/back"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginEnd="14dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="@dimen/_13sdp"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/ic_options" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/notification_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="41dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/option"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toStartOf="@+id/option"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_notifications" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_11sdp"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:visibility="invisible"
+                            android:backgroundTint="@color/bink"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+                            <TextView
+                                android:id="@+id/notif_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/arial_bold"
+                                android:text="10"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_8ssp" />
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView120"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="34dp"
+                    android:text="@string/hair_problem"
+                    android:textColor="@color/bink"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hair_text" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView120">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hair_loss_layout"
+                        android:layout_width="86dp"
+                        android:layout_height="93dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="9dp"
+                        android:layout_marginBottom="15dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="2dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/hair_damage_layout"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:id="@+id/hair_loss_layout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom|center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:src="@drawable/ic_hair_loss_vector1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="18.5dp"
+                                android:layout_marginEnd="18.5dp"
+                                android:layout_marginBottom="7dp"
+                                android:background="@color/bink_lighter" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="9dp"
+                                android:fontFamily="@font/arial_bold"
+                                android:text="@string/hair_loss"
+                                android:textColor="@color/bink"
+                                android:textSize="11sp"
+
+                                />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hair_damage_layout"
+                        android:layout_width="86dp"
+                        android:layout_height="93dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="9dp"
+                        android:paddingBottom="23dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="2dp"
+                        app:layout_constraintEnd_toStartOf="@+id/dandruff_layout"
+                        app:layout_constraintStart_toEndOf="@+id/hair_loss_layout"
+                        app:layout_constraintTop_toTopOf="@+id/hair_loss_layout">
+
+                        <LinearLayout
+                            android:id="@+id/hair_damage_layout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom|center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:src="@drawable/ic_hair_damge_vector" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="18.5dp"
+                                android:layout_marginEnd="18.5dp"
+                                android:layout_marginBottom="7dp"
+                                android:background="@color/bink_lighter"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/hair_damage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="9dp"
+                                android:fontFamily="@font/arial_bold"
+                                android:gravity="center"
+                                android:text="@string/hair_damage"
+                                android:textColor="@color/bink"
+                                android:textSize="11sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dandruff_layout"
+                        android:layout_width="86dp"
+                        android:layout_height="93dp"
+                        android:layout_marginStart="10dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="2dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/hair_damage_layout"
+                        app:layout_constraintTop_toTopOf="@+id/hair_loss_layout">
+
+                        <LinearLayout
+                            android:id="@+id/dandruff_layout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:src="@drawable/ic_dandruff_vector" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="18.5dp"
+                                android:layout_marginEnd="18.5dp"
+                                android:layout_marginBottom="7dp"
+                                android:background="@color/bink_lighter">
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/dandruff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="9dp"
+                                android:fontFamily="@font/arial_bold"
+                                android:gravity="center"
+                                android:text="@string/dandruff"
+                                android:textColor="@color/bink"
+                                android:textSize="11sp" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayoutHairLoss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_description_loss"
+                            android:layout_width="66dp"
+                            android:layout_height="72dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="15dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/card_reason_loss"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:id="@+id/description_layout_loss"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:src="@drawable/ic_description" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="14.7dp"
+                                    android:layout_marginEnd="13.6dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/bink_lighter" />
+
+                                <TextView
+                                    android:id="@+id/description_text_loss"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:text="@string/description"
+                                    android:textColor="@color/bink"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_reason_loss"
+                            android:layout_width="66dp"
+                            android:layout_height="72dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintEnd_toStartOf="@+id/card_tips_loss"
+                            app:layout_constraintStart_toEndOf="@+id/card_description_loss"
+                            app:layout_constraintTop_toTopOf="@+id/card_description_loss">
+
+                            <LinearLayout
+                                android:id="@+id/reasons_layout_loss"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:src="@drawable/ic_reason" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="14.7dp"
+                                    android:layout_marginEnd="13.6dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/bink_lighter" />
+
+                                <TextView
+                                    android:id="@+id/reasons_text_loss"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:text="@string/reasons"
+                                    android:textColor="@color/bink"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_tips_loss"
+                            android:layout_width="66dp"
+                            android:layout_height="72dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintEnd_toStartOf="@+id/card_natural_loss"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/card_reason_loss"
+                            app:layout_constraintTop_toTopOf="@+id/card_description_loss">
+
+                            <LinearLayout
+                                android:id="@+id/tips_layout_loss"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:src="@drawable/ic_tips" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="14.7dp"
+                                    android:layout_marginEnd="13.6dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/bink_lighter" />
+
+
+                                <TextView
+                                    android:id="@+id/tips_text_loss"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="@dimen/_2sdp"
+                                    android:text="@string/tips"
+                                    android:textColor="@color/bink"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_natural_loss"
+                            android:layout_width="66dp"
+                            android:layout_height="72dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/card_tips_loss"
+                            app:layout_constraintTop_toTopOf="@+id/card_description_loss">
+
+                            <LinearLayout
+                                android:id="@+id/natural_layout_loss"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp"
+                                    android:src="@drawable/ic_natural_recipes" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="14.7dp"
+                                    android:layout_marginEnd="13.6dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:background="@color/bink_lighter" />
+
+                                <TextView
+                                    android:id="@+id/natural_text_loss"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:gravity="center"
+                                    android:text="@string/natural_recipes_foot_hand_body"
+                                    android:textColor="@color/bink"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayoutHairDamage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_description_damage"
+                            android:layout_width="66dp"
+                            android:layout_height="72dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="15dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/card_reason_damage"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:id="@+id/description_layout_damage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:src="@drawable/ic_description" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="14.7dp"
+                                    android:layout_marginEnd="13.6dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/bink_lighter" />
+
+                                <TextView
+                                    android:id="@+id/description_text_damage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:text="@string/description"
+                                    android:textColor="@color/bink"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_reason_damage"
+                            android:layout_width="66dp"
+                            android:layout_height="72dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintEnd_toStartOf="@+id/card_tips_damage"
+                            app:layout_constraintStart_toEndOf="@+id/card_description_damage"
+                            app:layout_constraintTop_toTopOf="@+id/card_description_damage">
+
+                            <LinearLayout
+                                android:id="@+id/reasons_layout_damage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:src="@drawable/ic_reason" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="14.7dp"
+                                    android:layout_marginEnd="13.6dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/bink_lighter" />
+
+                                <TextView
+                                    android:id="@+id/reasons_text_damage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:text="@string/reasons"
+                                    android:textColor="@color/bink"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_tips_damage"
+                            android:layout_width="66dp"
+                            android:layout_height="72dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintEnd_toStartOf="@+id/card_natural_damage"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/card_reason_damage"
+                            app:layout_constraintTop_toTopOf="@+id/card_description_damage">
+
+                            <LinearLayout
+                                android:id="@+id/tips_layout_damage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:src="@drawable/ic_tips" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="14.7dp"
+                                    android:layout_marginEnd="13.6dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/bink_lighter" />
+
+
+                                <TextView
+                                    android:id="@+id/tips_text_damage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="@dimen/_2sdp"
+                                    android:text="@string/tips"
+                                    android:textColor="@color/bink"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_natural_damage"
+                            android:layout_width="66dp"
+                            android:layout_height="72dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/card_tips_damage"
+                            app:layout_constraintTop_toTopOf="@+id/card_description_damage">
+
+                            <LinearLayout
+                                android:id="@+id/natural_layout_damage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp"
+                                    android:src="@drawable/ic_natural_recipes" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="14.7dp"
+                                    android:layout_marginEnd="13.6dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:background="@color/bink_lighter" />
+
+                                <TextView
+                                    android:id="@+id/natural_text_damage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:gravity="center"
+                                    android:text="@string/natural_recipes_foot_hand_body"
+                                    android:textColor="@color/bink"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayoutHairDandruff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_description_dandruff"
+                            android:layout_width="66dp"
+                            android:layout_height="72dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="15dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/card_reason_dandruff"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:id="@+id/description_layout_dandruff"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:src="@drawable/ic_description" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="14.7dp"
+                                    android:layout_marginEnd="13.6dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/bink_lighter" />
+
+                                <TextView
+                                    android:id="@+id/description_text_dandruff"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:text="@string/description"
+                                    android:textColor="@color/bink"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_reason_dandruff"
+                            android:layout_width="66dp"
+                            android:layout_height="72dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintEnd_toStartOf="@+id/card_tips_dandruff"
+                            app:layout_constraintStart_toEndOf="@+id/card_description_dandruff"
+                            app:layout_constraintTop_toTopOf="@+id/card_description_dandruff">
+
+                            <LinearLayout
+                                android:id="@+id/reasons_layout_dandruff"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:src="@drawable/ic_reason" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="14.7dp"
+                                    android:layout_marginEnd="13.6dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/bink_lighter" />
+
+                                <TextView
+                                    android:id="@+id/reasons_text_dandruff"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:text="@string/reasons"
+                                    android:textColor="@color/bink"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_tips_dandruff"
+                            android:layout_width="66dp"
+                            android:layout_height="72dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintEnd_toStartOf="@+id/card_natural_dandruff"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/card_reason_dandruff"
+                            app:layout_constraintTop_toTopOf="@+id/card_description_dandruff">
+
+                            <LinearLayout
+                                android:id="@+id/tips_layout_dandruff"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:src="@drawable/ic_tips" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="14.7dp"
+                                    android:layout_marginEnd="13.6dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/bink_lighter" />
+
+
+                                <TextView
+                                    android:id="@+id/tips_text_dandruff"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="@dimen/_2sdp"
+                                    android:text="@string/tips"
+                                    android:textColor="@color/bink"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_natural_dandruff"
+                            android:layout_width="66dp"
+                            android:layout_height="72dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/card_tips_dandruff"
+                            app:layout_constraintTop_toTopOf="@+id/card_description_dandruff">
+
+                            <LinearLayout
+                                android:id="@+id/natural_layout_dandruff"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="7dp"
+                                    android:src="@drawable/ic_natural_recipes" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="14.7dp"
+                                    android:layout_marginEnd="13.6dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:background="@color/bink_lighter" />
+
+                                <TextView
+                                    android:id="@+id/natural_text_dandruff"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:gravity="center"
+                                    android:text="@string/natural_recipes_foot_hand_body"
+                                    android:textColor="@color/bink"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/arial_bold"
+                    android:text="@string/videos"
+                    android:textColor="#EB839D"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/video_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/videos_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:clipToPadding="false"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="27dp"
+                        android:paddingBottom="10dp"
+                        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:itemCount="1"
+                        tools:listitem="@layout/item_videos_small" />
+
+                    <ProgressBar
+                        android:id="@+id/load_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="9dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/arial_bold"
+                    android:text="@string/hair_products"
+                    android:textColor="#EB839D"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/video_container" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/products_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:clipToPadding="false"
+                    android:paddingStart="19dp"
+                    android:paddingEnd="19dp"
+                    android:paddingBottom="30dp"
+                    app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/item_liked_product1" />
+
+                <ProgressBar
+                    android:id="@+id/load_progress1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

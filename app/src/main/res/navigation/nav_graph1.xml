@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph1"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.gifting.kefi.ui.navigation_fragments.splash.SplashFragment"
+        android:label="splash_fragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/enter_form_right"
+            app:exitAnim="@anim/exit_from_right"
+            app:popEnterAnim="@anim/enter_form_left"
+            app:popExitAnim="@anim/exit_from_left" />
+        <action
+            android:id="@+id/action_splashFragment_to_mainActivity"
+            app:destination="@id/mainActivity"
+            app:enterAnim="@anim/enter_form_right"
+            app:exitAnim="@anim/exit_from_right"
+            app:popEnterAnim="@anim/enter_form_left"
+            app:popExitAnim="@anim/exit_from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.gifting.kefi.ui.navigation_fragments.welcome.WelcomeFragment"
+        android:label="welcome_fragment"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_phoneFragment"
+            app:destination="@id/phoneFragment"
+            app:enterAnim="@anim/enter_form_right"
+            app:exitAnim="@anim/exit_from_right"
+            app:popEnterAnim="@anim/enter_form_left"
+            app:popExitAnim="@anim/exit_from_left" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/enter_form_right"
+            app:exitAnim="@anim/exit_from_right"
+            app:popEnterAnim="@anim/enter_form_left"
+            app:popExitAnim="@anim/exit_from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneFragment"
+        android:name="com.gifting.kefi.ui.navigation_fragments.phone.PhoneFragment"
+        android:label="PhoneFragment"
+        tools:layout="@layout/fragment_phone">
+        <action
+            android:id="@+id/action_phoneFragment_to_verificationPhoneFragment"
+            app:destination="@id/verificationPhoneFragment"
+            app:enterAnim="@anim/enter_form_right"
+            app:exitAnim="@anim/exit_from_right"
+            app:popEnterAnim="@anim/enter_form_left"
+            app:popExitAnim="@anim/exit_from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationPhoneFragment"
+        android:name="com.gifting.kefi.ui.navigation_fragments.verify_phone.VerificationPhoneFragment"
+        android:label="verification_phone_fragment"
+        tools:layout="@layout/fragment_verification_phone">
+        <argument
+            android:name="phone"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_verificationPhoneFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/enter_form_right"
+            app:exitAnim="@anim/exit_from_right"
+            app:popEnterAnim="@anim/enter_form_left"
+            app:popExitAnim="@anim/exit_from_left"
+            app:popUpTo="@id/verificationPhoneFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.gifting.kefi.ui.navigation_fragments.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment"
+            app:enterAnim="@anim/enter_form_right"
+            app:exitAnim="@anim/exit_from_right"
+            app:popEnterAnim="@anim/enter_form_left"
+            app:popExitAnim="@anim/exit_from_left" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.gifting.kefi.ui.navigation_fragments.register.RegisterFragment"
+        android:label="register_fragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/enter_form_right"
+            app:exitAnim="@anim/exit_from_right"
+            app:popEnterAnim="@anim/enter_form_left"
+            app:popExitAnim="@anim/exit_from_left" />
+        <action
+            android:id="@+id/action_registerFragment_to_mainActivity"
+            app:destination="@id/mainActivity"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.gifting.kefi.ui.navigation_fragments.forget_password.ForgetPasswordFragment"
+        android:label="ForgetPasswordFragment"
+        tools:layout="@layout/fragment_forget_password" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.gifting.kefi.ui.activities.main.MainActivity"
+        android:label="MainActivity" />
+</navigation>

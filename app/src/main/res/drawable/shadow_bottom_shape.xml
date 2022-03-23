@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- solids that simulate shadow !-->
+
+    <item>
+        <shape>
+            <corners android:radius="11dp"></corners>
+            <padding android:bottom="1dp" />
+            <gradient
+                android:angle="90"
+                android:centerColor="#00CCCCCC"
+                android:endColor="#00CCCCCC"
+                android:startColor="#10CCCCCC" />
+        </shape>
+
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="11dp"></corners>
+            <padding android:bottom="1dp" />
+            <gradient
+                android:angle="90"
+                android:centerColor="#00CCCCCC"
+                android:endColor="#00CCCCCC"
+                android:startColor="#20CCCCCC" />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="11dp"></corners>
+            <padding android:bottom="1dp" />
+            <gradient
+                android:angle="90"
+                android:centerColor="#00CCCCCC"
+                android:endColor="#00CCCCCC"
+                android:startColor="#40CCCCCC" />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="11dp"></corners>
+            <padding android:bottom="1dp" />
+            <gradient
+                android:angle="90"
+                android:centerColor="#00CCCCCC"
+                android:endColor="#00CCCCCC"
+                android:startColor="#50CCCCCC" />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="11dp"></corners>
+            <padding android:bottom="1dp" />
+            <gradient
+                android:angle="90"
+                android:centerColor="#00CCCCCC"
+                android:endColor="#00CCCCCC"
+                android:startColor="#61CCCCCC" />
+
+
+        </shape>
+    </item>
+
+    <!-- main background !-->
+    <item>
+        <shape>
+            <corners
+                android:radius="11dp" />
+            <gradient
+                android:angle="270"
+                android:centerColor="#FFFFFF"
+                android:endColor="@color/white"
+                android:startColor="#00FFFFFF" />
+        </shape>
+    </item>
+
+
+</layer-list>

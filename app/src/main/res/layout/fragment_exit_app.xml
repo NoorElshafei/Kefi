@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_alpha_80"
+        android:elevation="20dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/full_rounded_bottom_sheet"
+            android:paddingBottom="17dp">
+
+
+            <TextView
+                android:id="@+id/cancel_this_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/arial_bold"
+                android:text="@string/exit_app"
+                android:textColor="@color/bink"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/add_note_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/arial_regular"
+                android:text="@string/do_you_want_to_exit_from_app"
+                android:textColor="@color/bink"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cancel_this_trip" />
+
+            <LinearLayout
+                android:id="@+id/exit_button"
+                android:layout_width="110dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/stroke_button_bink_r24_1dp"
+                android:foreground="@drawable/ripple"
+                android:orientation="vertical"
+                app:cardCornerRadius="16dp"
+
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_note_name">
+
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/arial_bold"
+                    android:gravity="center_vertical"
+                    android:text="@string/exit"
+                    android:textColor="@color/bink"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/back_button"
+                android:layout_width="110dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/stroke_button_bink_r24_1dp"
+                android:foreground="@drawable/ripple"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_note_name">
+
+
+                <TextView
+                    android:id="@+id/textView445"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/arial_bold"
+                    android:gravity="center_vertical"
+                    android:text="@string/back"
+                    android:textColor="@color/bink"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+</layout>

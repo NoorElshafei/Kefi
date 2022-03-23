@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.training_details.TrainingDetailsActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="39dp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_icon_navigation_chevron_left_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@+id/back"
+        android:text="Slide Plank With Hip Dips"
+        android:textColor="#EB839D"
+        android:textSize="@dimen/_19sdp"
+        app:layout_constraintEnd_toStartOf="@+id/notification_layout"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="14dp"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingTop="5dp"
+        android:paddingEnd="@dimen/_13sdp"
+        android:paddingBottom="5dp"
+        android:src="@drawable/ic_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/notification_layout"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="11dp"
+        android:layout_toStartOf="@+id/option"
+        app:layout_constraintEnd_toStartOf="@+id/option"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_notifications" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginEnd="-7dp"
+            android:visibility="invisible"
+            android:layout_toStartOf="@+id/cart"
+            android:backgroundTint="@color/bink"
+            app:cardCornerRadius="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/notif_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/arial_bold"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8ssp" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginBottom="57dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView25"
+                app:srcCompat="@drawable/ic_training_big_image" />
+
+            <TextView
+                android:id="@+id/textView94"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="1dp"
+                android:fontFamily="@font/arial_bold"
+                android:text="10"
+                android:textColor="@color/bink"
+                android:textSize="20sp"
+
+                app:layout_constraintEnd_toStartOf="@+id/textView95"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/arial_bold"
+                android:text="M"
+                android:textColor="@color/bink"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="7dp"
+                app:layout_constraintEnd_toStartOf="@+id/textView94"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_watch_big" />
+
+            <ImageView
+                android:id="@+id/imageView48"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_play_icon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

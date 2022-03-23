@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        tools:context=".ui.fragments.edit_name_bottom_sheet.EditNameFragment">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/top_rounded_bottom_sheet_r38"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="34dp"
+                android:fontFamily="@font/arial_bold"
+                android:text="@string/edit_name"
+                android:textColor="@color/bink"
+                android:textSize="19dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.gifting.kefi.util.EditTextV2
+                android:id="@+id/name_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="34dp"
+                android:background="@drawable/stroke_edittext_bink_13r_1dp"
+                android:gravity="top"
+                android:hint="@string/add_name"
+                android:inputType="textPersonName"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:paddingStart="@dimen/_9sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_9sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="@color/bink"
+                android:textColorHint="@color/bink_lighter"
+                android:textSize="@dimen/_10sdp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_name" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/save_name"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/stroke_button_bink_r24_1dp"
+                    android:foreground="@drawable/ripple"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="35dp"
+                    app:layout_constraintTop_toBottomOf="@+id/name_editText"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/arial_bold"
+                        android:text="@string/save"
+                        android:textColor="@color/bink"
+                        android:textSize="@dimen/_10ssp" />
+
+                </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

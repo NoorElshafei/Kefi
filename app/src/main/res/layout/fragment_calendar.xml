@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.gifting.kefi.ui.fragments.calendar.CalendarFragment">
+
+
+        <!--<androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/shadow_top_left_right_shape"
+            android:elevation="10dp"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="220dp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView17">
+
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/notes_recycler_view"
+                app:srcCompat="@drawable/ic_create" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/arial_bold"
+                android:text="Create new one"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintStart_toEndOf="@+id/imageView16"
+                app:layout_constraintTop_toBottomOf="@+id/notes_recycler_view" />
+
+            <RelativeLayout
+                android:id="@+id/new_button"
+                android:layout_width="@dimen/_52sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/stroke_button_bink_1dp_r13"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/notes_recycler_view">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/arial_bold"
+                    android:text="+"
+                    android:textColor="@color/bink"
+                    android:textSize="@dimen/_16ssp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="33dp"
+                android:fontFamily="@font/arial_bold"
+                android:text="My note"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/notes_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:itemCount="2"
+                tools:listitem="@layout/note_item" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <include
+            android:id="@+id/bottom_sheet_behavior_id"
+            layout="@layout/layout_notes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/calendar_text_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="61dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/arial_bold"
+                android:text="May"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/calendar_text_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/arial_bold"
+                android:text="2021"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintStart_toEndOf="@+id/calendar_text_month"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    <!--        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="42dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calendar_text_year"
+                app:mcv_calendarMode="month"
+                app:mcv_dateTextAppearance="@style/CustomTextAppearance1"
+                app:mcv_firstDayOfWeek="saturday"
+                app:mcv_headerTextAppearance="@style/CustomTextAppearance"
+                app:mcv_monthLabels="@array/custom_months"
+                app:mcv_showOtherDates="all"
+                app:mcv_tileSize="@dimen/_30sdp"
+                app:mcv_tileWidth="match_parent"
+                app:mcv_titleAnimationOrientation="vertical"
+                app:mcv_weekDayLabels="@array/custom_weekdays_arabic"
+                app:mcv_weekDayTextAppearance="@style/CustomTextAppearance" />-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="18dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="49dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="gone"
+
+                >
+
+            <ImageView
+                android:id="@+id/settings_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_settings_big"
+                android:padding="5dp"
+                android:foreground="?android:attr/selectableItemBackground"/>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

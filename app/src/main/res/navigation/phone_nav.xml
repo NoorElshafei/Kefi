@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phone_nav"
+    app:startDestination="@id/changePhoneFragment">
+    <fragment
+        android:id="@+id/changePhoneFragment"
+        android:name="com.gifting.kefi.ui.activities.change_phone_setting.phone.ChangePhoneFragment"
+        android:label="ChangePhoneFragment"
+        tools:layout="@layout/fragment_phone">
+        <action
+            android:id="@+id/action_changePhoneFragment_to_changeVerificationPhoneFragment"
+            app:destination="@id/changeVerificationPhoneFragment"
+            app:enterAnim="@anim/enter_form_right"
+            app:exitAnim="@anim/exit_from_right"
+            app:popEnterAnim="@anim/enter_form_left"
+            app:popExitAnim="@anim/exit_from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeVerificationPhoneFragment"
+        android:name="com.gifting.kefi.ui.activities.change_phone_setting.verify_phone.ChangeVerificationPhoneFragment"
+        android:label="ChangeVerificationPhoneFragment"
+        tools:layout="@layout/fragment_verification_phone"/>
+</navigation>

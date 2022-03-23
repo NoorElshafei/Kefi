@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.gifting.kefi.ui.activities.edit_profile.EditProfileActivity">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="38dp"
+            android:src="@drawable/ic_flower1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:descendantFocusability="beforeDescendants"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="32dp"
+                        android:layout_toStartOf="@+id/option"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/back_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp"
+                            android:src="@drawable/ic_icon_navigation_chevron_left_24px" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/option"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="39dp"
+                        android:layout_marginEnd="14dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="@dimen/_13sdp"
+                            android:paddingBottom="10dp"
+                            android:src="@drawable/ic_options" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/notification_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="41dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/option"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toStartOf="@+id/option"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                 <!--       <RelativeLayout
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp">
+
+                            <ImageView
+                                android:id="@+id/cart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_notifications" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="@dimen/_13sdp"
+                                android:layout_height="@dimen/_11sdp"
+                                android:layout_marginStart="1dp"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:backgroundTint="@color/bink"
+                                android:visibility="invisible"
+                                app:cardCornerRadius="@dimen/_5sdp">
+
+                                <TextView
+                                    android:id="@+id/notif_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:text="10"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_8ssp" />
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>-->
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/image_card1"
+                        android:layout_width="@dimen/_102sdp"
+                        android:layout_height="@dimen/_102sdp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/bink"
+                        app:cardCornerRadius="@dimen/_51sdp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/notification_layout" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/image_card"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center_horizontal"
+                        app:cardCornerRadius="@dimen/_50sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/image_card1"
+                        app:layout_constraintEnd_toEndOf="@+id/image_card1"
+                        app:layout_constraintStart_toStartOf="@+id/image_card1"
+                        app:layout_constraintTop_toTopOf="@+id/image_card1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/user_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/profile_photo3" />
+
+                            <RelativeLayout
+                                android:id="@+id/select_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="#80FFFFFF">
+
+
+                                <ImageView
+                                    android:id="@+id/camera_icon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/ic_camera" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/linearLayout10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="70dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout101">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/stroke_edittext_bink"
+                            android:orientation="horizontal">
+
+                            <com.gifting.kefi.util.EditTextV2
+                                android:id="@+id/new_password_editText"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_weight="9"
+                                android:background="@null"
+                                android:fontFamily="@font/arial_regular"
+                                android:hint="@string/new_password"
+                                android:inputType="textPassword|textNoSuggestions"
+                                android:paddingStart="@dimen/_15ssp"
+                                android:paddingEnd="@dimen/_15sdp"
+                                android:textColor="@color/bink"
+                                android:textColorHint="#EBC7D0"
+                                android:textSize="@dimen/_8ssp"
+                                app:layout_constraintEnd_toStartOf="@+id/eye_pass_image1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/eye_pass_image1"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="2"
+                                android:padding="@dimen/_4sdp"
+                                android:src="@drawable/ic_baseline_visibility_off_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/linearLayout101"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="34dp"
+                        android:layout_marginEnd="70dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/image_card">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/stroke_edittext_bink"
+                            android:orientation="horizontal">
+
+                            <com.gifting.kefi.util.EditTextV2
+                                android:id="@+id/old_password_editText"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_weight="9"
+                                android:background="@null"
+                                android:fontFamily="@font/arial_regular"
+                                android:hint="@string/old_password"
+                                android:inputType="textPassword|textNoSuggestions"
+                                android:paddingStart="@dimen/_15ssp"
+                                android:paddingEnd="@dimen/_15sdp"
+                                android:textColor="@color/bink"
+                                android:textColorHint="#EBC7D0"
+                                android:textSize="@dimen/_8ssp"
+                                app:layout_constraintEnd_toStartOf="@+id/eye_pass_image11"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/eye_pass_image11"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="2"
+                                android:padding="@dimen/_4sdp"
+                                android:src="@drawable/ic_baseline_visibility_off_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/linearLayout11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="70dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/stroke_edittext_bink"
+                            android:orientation="horizontal">
+
+                            <com.gifting.kefi.util.EditTextV2
+                                android:id="@+id/repeat_password_editText"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_weight="9"
+                                android:background="@null"
+                                android:fontFamily="@font/arial_regular"
+                                android:hint="@string/repeat_new_password"
+                                android:inputType="textPassword|textNoSuggestions"
+                                android:paddingStart="@dimen/_15ssp"
+                                android:paddingEnd="@dimen/_15sdp"
+                                android:textColor="@color/bink"
+                                android:textColorHint="#EBC7D0"
+                                android:textSize="@dimen/_8ssp"
+                                app:layout_constraintEnd_toStartOf="@+id/repeat_eye_pass_image"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/repeat_eye_pass_image"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="2"
+                                android:padding="@dimen/_4sdp"
+                                android:src="@drawable/ic_baseline_visibility_off_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:id="@+id/birth_date_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="70dp"
+                        android:background="@drawable/stroke_edittext_bink"
+                        android:fontFamily="@font/arial_regular"
+                        android:paddingStart="@dimen/_15ssp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+                        <TextView
+                            android:id="@+id/phone_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/arial_regular"
+                            android:text="+201098245343"
+                            android:textColor="#EBC7D0"
+                            android:textSize="@dimen/_8ssp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+
+                            <TextView
+                                android:id="@+id/change_phone_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/arial_regular"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="@string/change_phone"
+                                android:textColor="@color/bink"
+                                android:textSize="@dimen/_7ssp" />
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/save_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/stroke_button_bink_r24_1dp"
+                            android:foreground="@drawable/ripple"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+                            app:layout_constraintTop_toBottomOf="@+id/birth_date_layout"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginEnd="30dp"
+                                android:fontFamily="@font/arial_bold"
+                                android:text="@string/save_changes"
+                                android:textColor="@color/bink"
+                                android:textSize="11sp" />
+
+
+                        </LinearLayout>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+
+
+            <LinearLayout
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E6FFFFFF"
+                android:elevation="2dp"
+                android:gravity="center_horizontal"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="39dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_calendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/stroke_button_bink_alpha90"
+                        android:orientation="vertical"
+                        tools:context=".ui.fragments.calendarFragment.CalendarFragment">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical"
+                            android:src="@drawable/ic_flower" />
+
+                        <DatePicker
+                            android:id="@+id/datePicker"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_190sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:calendarViewShown="false"
+                            android:datePickerMode="spinner"
+                            android:theme="@style/MyDatePicker" />
+
+                        <LinearLayout
+                            android:id="@+id/button_done"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_below="@+id/datePicker"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="-10dp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:background="@drawable/stroke_button_bink_alpha90"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/arial_regular"
+                                android:text="Set"
+                                android:textColor="@color/bink"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

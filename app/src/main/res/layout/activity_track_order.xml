@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.track_order.TrackOrderActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="32dp"
+            android:layout_toStartOf="@+id/option"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_icon_navigation_chevron_left_24px" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="39dp"
+            android:layout_toEndOf="@+id/back"
+            android:text="@string/tracking_order"
+            android:textColor="#EB839D"
+            android:textSize="@dimen/_19sdp"
+            app:layout_constraintStart_toEndOf="@+id/back"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="14dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="10dp"
+                android:paddingEnd="@dimen/_13sdp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_options" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/notification_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/option"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/option"
+            app:layout_constraintTop_toTopOf="parent">
+
+      <!--      <RelativeLayout
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_notifications" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_11sdp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:visibility="invisible"
+                    android:backgroundTint="@color/bink"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/notif_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/arial_bold"
+                        android:text="10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8ssp" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>-->
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tracking_gif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <ImageView
+            android:id="@+id/imageView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_received_order"
+            app:layout_constraintEnd_toStartOf="@+id/imageView56"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView53" />
+
+        <ImageView
+            android:id="@+id/imageView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_on_way"
+            app:layout_constraintEnd_toStartOf="@+id/imageView57"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView54"
+            app:layout_constraintTop_toTopOf="@+id/imageView54" />
+
+        <ImageView
+            android:id="@+id/imageView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_on_way"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView56"
+            app:layout_constraintTop_toTopOf="@+id/imageView54" />
+
+        <TextView
+            android:id="@+id/textView131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/arial_bold"
+            android:text="@string/received"
+            android:textColor="@color/bink"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView54"
+            app:layout_constraintStart_toStartOf="@+id/imageView54"
+            app:layout_constraintTop_toBottomOf="@+id/imageView54" />
+
+        <TextView
+            android:id="@+id/textView132"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial_bold"
+            android:text="@string/on_the_way"
+            android:textColor="@color/bink"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView56"
+            app:layout_constraintStart_toStartOf="@+id/imageView56"
+            app:layout_constraintTop_toTopOf="@+id/textView131" />
+
+        <TextView
+            android:id="@+id/textView133"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial_bold"
+            android:text="@string/delivered"
+            android:textColor="@color/bink"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView57"
+            app:layout_constraintStart_toStartOf="@+id/imageView57"
+            app:layout_constraintTop_toTopOf="@+id/textView131" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout17"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/bink"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView54"
+            app:layout_constraintEnd_toStartOf="@+id/imageView56"
+            app:layout_constraintStart_toEndOf="@+id/imageView54"
+            app:layout_constraintTop_toTopOf="@+id/imageView54" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/bink"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView56"
+            app:layout_constraintEnd_toStartOf="@+id/imageView57"
+            app:layout_constraintStart_toEndOf="@+id/imageView56"
+            app:layout_constraintTop_toTopOf="@+id/imageView56" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

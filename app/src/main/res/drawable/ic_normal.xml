@@ -1,0 +1,103 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="53.202dp"
+    android:height="72.891dp"
+    android:viewportWidth="53.202"
+    android:viewportHeight="72.891">
+  <path
+      android:pathData="M37.188,26.142c-1.647,14.346 -4.666,17.493 -19.117,17.493s-17.009,-5.919 -15.162,-24.934c1.4,-14.372 13.643,-21.306 23.205,-17.145C31.015,3.687 39.175,8.837 37.188,26.142Z"
+      android:strokeWidth="0.5"
+      android:fillColor="#eb839d"
+      android:strokeColor="#4f4f4f"/>
+  <path
+      android:pathData="M40.984,24.55c9.023,-0.791 13.039,9.622 11.651,17.117 -0.474,2.553 -1.851,7.376 -8.365,8.605"
+      android:strokeWidth="0.5"
+      android:fillColor="#eb839d"
+      android:strokeColor="#4f4f4f"/>
+  <path
+      android:pathData="M51.178,34.763c-1.648,14.346 -9.966,24.506 -24.417,24.506s-28.183,-8.989 -26.335,-28c1.4,-14.372 11.885,-24.287 26.335,-24.287S53.166,17.457 51.178,34.763Z"
+      android:strokeWidth="0.5"
+      android:fillColor="#eb839d"
+      android:strokeColor="#4f4f4f"/>
+  <path
+      android:pathData="M25.205,72.61c-13.115,-0.667 -20.969,-13.056 -20.969,-25.27 0,-9.105 4.012,-19.186 12.583,-23.382 15.732,-7.7 32.44,7.427 32.287,23.381 -0.123,12.892 -10.116,25.971 -23.9,25.271"
+      android:strokeWidth="0.5"
+      android:fillColor="#fff"
+      android:strokeColor="#4f4f4f"/>
+  <path
+      android:pathData="M11.524,46.158s5.962,-2.7 8.8,0"
+      android:strokeWidth="1"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M32.658,46.158s5.963,-2.7 8.8,0"
+      android:strokeWidth="1"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M11.524,43.889L12.518,45.56"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M14.229,42.941L14.654,44.838"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M17.492,42.964L17.376,44.904"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M20.504,43.732L19.373,45.313"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M32.569,43.889L33.563,45.56"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M35.274,42.941L35.699,44.838"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M38.537,42.964L38.421,44.904"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M41.549,43.732L40.418,45.313"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M22.128,60.486s4.164,5.107 8.99,0"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M24.584,54.859a0.331,0.804 0,1 0,0.662 0a0.331,0.804 0,1 0,-0.662 0z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M28.027,54.859a0.331,0.804 0,1 0,0.662 0a0.331,0.804 0,1 0,-0.662 0z"/>
+</vector>

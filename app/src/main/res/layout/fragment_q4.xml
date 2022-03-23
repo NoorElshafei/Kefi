@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gifting.kefi.ui.navigation_fragments.questions.Q4Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/q1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial_bold"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:text="@string/step_4_8"
+            android:textColor="@color/bink_light"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="@font/arial_bold"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:text="@string/describe_your_skin"
+            android:textColor="@color/bink_light"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/q4_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:foregroundGravity="center_horizontal"
+            android:layout_marginTop="@dimen/_46sdp"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_answer" />
+       <!-- <RelativeLayout
+            android:id="@+id/Shiny_layout"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_39sdp"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:background="@drawable/stroke_button_bink_r_16"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/arial_regular"
+                android:paddingEnd="@dimen/_20sdp"
+                android:text="Shiny"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:src="@drawable/ic_check_yes" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hydrated_layout"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_39sdp"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:background="@drawable/stroke_button_bink_r_16"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/arial_regular"
+                android:paddingEnd="@dimen/_20sdp"
+                android:text="Hydrated"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:src="@drawable/ic_check_no" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/upper"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_39sdp"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:background="@drawable/stroke_button_bink_r_16"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/arial_regular"
+                android:paddingEnd="@dimen/_20sdp"
+                android:text="Has visibly small pores"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_10ssp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:src="@drawable/ic_check_no" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/different"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_39sdp"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:background="@drawable/stroke_button_bink_r_16"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/arial_regular"
+                android:paddingEnd="@dimen/_20sdp"
+                android:text="Two different type of facial skin"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_9ssp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:src="@drawable/ic_check_no" />
+        </RelativeLayout>
+-->
+
+
+
+        <LinearLayout
+            android:id="@+id/q4_button"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:foreground="@drawable/ripple"
+            android:background="@drawable/stroke_button_bink_light_r22_w2"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:orientation="horizontal"
+          >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/arial_regular"
+                android:text="@string/next"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

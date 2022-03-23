@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- solids that simulate shadow !-->
+    <item>
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#03CCCCCC" />
+            <padding
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:bottom="0.5dp"
+                android:top="0.5dp"/>
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#05CCCCCC" />
+            <padding
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:bottom="0.5dp"
+                android:top="0.5dp"
+                />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#08CCCCCC" />
+            <padding
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:bottom="0.5dp"
+                android:top="0.5dp"/>
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#0ACCCCCC" />
+            <padding
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:bottom="0.5dp"
+                android:top="0.5dp"/>
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#0DCCCCCC" />
+            <padding
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:bottom="0.5dp"
+                android:top="0.5dp"
+                />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#0FCCCCCC" />
+            <padding
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:bottom="0.5dp"
+                android:top="0.5dp"
+                />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#12CCCCCC" />
+            <padding
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:bottom="0.5dp"
+                />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#14CCCCCC" />
+            <padding
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:bottom="0.5dp"
+
+                />
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#17CCCCCC" />
+            <padding
+                android:bottom="0.5dp"
+                />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#1ACCCCCC" />
+            <padding
+
+                android:bottom="0.5dp"
+                />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#1CCCCCCC" />
+            <padding
+                android:bottom="0.5dp"
+                />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#1FCCCCCC" />
+            <padding
+                android:bottom="0.5dp"
+                />
+
+        </shape>
+    </item>
+
+
+    <!-- main background !-->
+    <item>
+        <shape>
+            <corners
+                android:radius="14dp"
+                />
+            <solid android:color="#FFFFFF" />
+
+        </shape>
+    </item>
+
+
+</layer-list>

@@ -1,0 +1,103 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="109.249dp"
+    android:height="149.875dp"
+    android:viewportWidth="109.249"
+    android:viewportHeight="149.875">
+  <path
+      android:pathData="M76.471,53.675c-3.4,29.6 -9.629,36.1 -39.447,36.1s-35.1,-12.214 -31.286,-51.452c2.883,-29.657 28.151,-43.965 47.884,-35.379C63.732,7.339 80.572,17.967 76.471,53.675Z"
+      android:strokeWidth="0.5"
+      android:fillColor="#eb839d"
+      android:strokeColor="#4f4f4f"/>
+  <path
+      android:pathData="M84.304,50.39c18.619,-1.633 26.906,19.855 24.041,35.32 -0.977,5.268 -3.819,15.22 -17.262,17.757"
+      android:strokeWidth="0.5"
+      android:fillColor="#eb839d"
+      android:strokeColor="#4f4f4f"/>
+  <path
+      android:pathData="M105.341,71.465c-3.4,29.6 -20.565,50.567 -50.385,50.567s-58.155,-18.549 -54.343,-57.786c2.882,-29.657 24.524,-50.115 54.343,-50.115S109.442,35.755 105.341,71.465Z"
+      android:strokeWidth="0.5"
+      android:fillColor="#eb839d"
+      android:strokeColor="#4f4f4f"/>
+  <path
+      android:pathData="M51.744,149.563c-27.062,-1.377 -43.268,-26.94 -43.268,-52.145 0,-18.788 8.279,-39.59 25.964,-48.249 32.464,-15.9 66.939,15.325 66.623,48.247 -0.254,26.6 -20.875,53.591 -49.319,52.146"
+      android:strokeWidth="0.5"
+      android:fillColor="#fff"
+      android:strokeColor="#4f4f4f"/>
+  <path
+      android:pathData="M23.515,94.979s12.3,-5.562 18.161,0"
+      android:strokeWidth="1"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M67.124,94.979s12.3,-5.562 18.163,0"
+      android:strokeWidth="1"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M23.514,90.296L25.565,93.743"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M29.096,88.339L29.972,92.253"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M35.827,88.387L35.589,92.39"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M42.044,89.972L39.71,93.234"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M66.94,90.296L68.991,93.743"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M72.522,88.339L73.398,92.253"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M79.253,88.387L79.015,92.39"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M85.47,89.972L83.136,93.234"
+      android:strokeLineJoin="round"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="square"/>
+  <path
+      android:pathData="M45.391,124.542s8.593,10.537 18.551,0"
+      android:strokeWidth="0.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M50.464,112.932a0.684,1.659 0,1 0,1.368 0a0.684,1.659 0,1 0,-1.368 0z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M57.568,112.932a0.684,1.659 0,1 0,1.368 0a0.684,1.659 0,1 0,-1.368 0z"/>
+</vector>

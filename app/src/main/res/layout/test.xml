@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shadow_bottom_left_right_shape"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_card">
+
+        <RelativeLayout
+            android:id="@+id/favorite_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_13sdp"
+            android:paddingBottom="@dimen/_4sdp">
+
+            <ImageView
+                android:id="@+id/favorite_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:src="@drawable/ic_favorite_big" />
+
+
+            <TextView
+                android:id="@+id/favorite_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_toEndOf="@+id/favorite_image"
+                android:fontFamily="@font/arial_regular"
+                android:text="My Favorite"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/favorite_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:src="@drawable/ic_forword11" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:background="@color/bink_alpha_10" />
+
+        <RelativeLayout
+            android:id="@+id/liked_articles_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/liked_articles_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:src="@drawable/ic_liked_articles" />
+
+            <TextView
+                android:id="@+id/liked_articles_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_toEndOf="@+id/liked_articles_image"
+                android:fontFamily="@font/arial_regular"
+                android:text="Liked Articles"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/liked_articles_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:src="@drawable/ic_forword11" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:background="@color/bink_alpha_10" />
+
+        <RelativeLayout
+            android:id="@+id/liked_videos_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/liked_videos_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:src="@drawable/ic_liked_videos" />
+
+            <TextView
+                android:id="@+id/liked_videos_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_toEndOf="@+id/liked_videos_image"
+                android:fontFamily="@font/arial_regular"
+                android:text="Liked Videos"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/notification_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:src="@drawable/ic_forword11" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:background="@color/bink_alpha_10" />
+
+        <RelativeLayout
+            android:id="@+id/log_out_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/log_out_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:src="@drawable/ic_logout_big" />
+
+            <TextView
+                android:id="@+id/log_out_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_toEndOf="@+id/log_out_image"
+                android:fontFamily="@font/arial_regular"
+                android:text="Log Out"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/log_out_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:src="@drawable/ic_forword11" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:background="@color/bink_alpha_10" />
+
+        <RelativeLayout
+            android:id="@+id/delete_profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/delete_profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:src="@drawable/ic_delete_profile" />
+
+            <TextView
+                android:id="@+id/delete_profile_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_toEndOf="@+id/delete_profile_image"
+                android:fontFamily="@font/arial_regular"
+                android:text="Delete My Profile"
+                android:textColor="@color/bink"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/delete_profile_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:src="@drawable/ic_forword11" />
+        </RelativeLayout>
+
+
+    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

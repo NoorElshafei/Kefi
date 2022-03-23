@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="forget_password" translatable="false">Forget Password?</string>
+    <string name="u_prefer_not_to_choose_u" translatable="false"><![CDATA[<u>Prefer not to choose</u>]]></string>
+    <string name="i_don_t_know" translatable="false">i don’t know</string>
+    <string name="accept_our_terms_and_conditions" translatable="false">accept our terms and conditions</string>
+    <string name="click_here_to_read" translatable="false">Click Here to read</string>
+    <string name="see_all" translatable="false">See all</string>
+    <string name="view_more" translatable="false">View More</string>
+    <string name="send_me_a_new_code" translatable="false">Send me a new code</string>
+</resources>
